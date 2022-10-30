@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Play&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  background-color: rgb(85, 85, 85);
+}
+
+.header {
+  padding: 20px 10px;
+  background-color: rgb(50, 50, 50);
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Audiowide';
+  font-size: 40px;
+  color: rgb(255, 180, 0);
+}
+
+.container {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.info.container {
+  flex: 0.25 1 auto;
+}
+
+.info {
+  text-align: center;
+  font-family: 'Play';
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.result {
+  flex: 0.25 1 auto;
+  border: 4px solid black;
+  border-radius: 25px;
+  margin: 20px 80px;
+}
+
+.right {
+  flex-flow: column;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 250px;
+  border-right: 4px solid black;
+}
+
+.scoreboard {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.playerscore,
+.computerscore,
+.gametext {
+  font-family: 'Play';
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+
+.choices.container {
+  gap: 50px;
+}
+
+img {
+  height: 150px;
+}
+
+button {
+  border: 0px;
+}
+
+.choice {
+  height: 200px;
+  width: 200px;
+  cursor: pointer;
+  border-radius: 25%;
+  background-color:rgb(125, 125, 125);
+}
+
+.choice:hover, 
+.choice:active {
+  background-color: rgb(160,160,160);
+}
+
+#resetBtn {
+  background-color: red;
+  border-radius: 5px;
+  margin: 30px auto;
+  padding: 15px 40px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+#resetBtn:hover, 
+#resetBtn:active {
+  background-color: rgb(255, 70, 70);
+}
+
+.chosen {
+  transform: scale(1.1);
+  background-color: rgb(150,150,150);
+  border: 3px solid;
+}
+
+.win {
+  border: 3px solid rgb(70, 252, 70);
+  transition: border 0.15s;
+}
+
+.lose {
+  border: 3px solid red;
+  transition: border 0.15s;
+}
+
+.draw {
+  border: 3px solid yellow;
+  transition: border 0.15s;
+}
+
+/* @media (max-width: 600px) {
+  .button-container {
+    flex-flow:column;
+    gap: 10px;
+  }
+  
+} */

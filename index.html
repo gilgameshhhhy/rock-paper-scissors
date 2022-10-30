@@ -4,10 +4,46 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="./styles.css">
+  <title>Rock, Paper, Scissors!</title>
 </head>
 <body>
-  <script type="text/javascript" src="./script.js"></script>
-  
+  <script type="text/javascript" src="./script.js" defer></script>
+  <div class="header">
+    <h1>Rock, Paper, Scissors!</h1>
+  </div>
+  <div class="info container">
+    <p class="info">
+      Play against a computer in best of five!<br>
+      Whoever scores the most will be the winner!
+    </p>
+  </div>
+  <p class="info" id="round"></p>
+  <div class="result container">
+    <div class="left">
+      <img id="computerChoice" src="">
+    </div>
+    <div class="right container">
+      <div class="scoreboard">
+        <p class="playerscore"></p>
+        <p class="computerscore"></p>
+      </div>
+      <div>
+        <p class="gametext"></p>
+      </div>
+    </div>
+  </div>
+  <div class="choices container">
+    <button id="rockBtn" class="choice">
+      <img src="./images/rock.png" alt="Hand throwing out rock">
+    </button>
+    <button id="paperBtn" class="choice">
+      <img src="./images/paper.png" alt="Hand throwing out paper">
+    </button>
+    <button id="scissorsBtn" class="choice">
+      <img src="./images/scissors.png" alt="Hand throwing out scissors">
+    </button>
+  </div>
+  <button id="resetBtn" class="info">Reset game?</button>
 </body>
 </html>
